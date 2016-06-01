@@ -1,0 +1,4 @@
+C:\Users\Milap\Documents\Visual Studio 2010\Projects\WebSite1\DAL\bin\Debug\DAL.dll
+C:\Users\Milap\Documents\Visual Studio 2010\Projects\WebSite1\DAL\bin\Debug\DAL.pdb
+C:\Users\Milap\Documents\Visual Studio 2010\Projects\WebSite1\DAL\obj\Debug\DAL.dll
+C:\Users\Milap\Documents\Visual Studio 2010\Projects\WebSite1\DAL\obj\Debug\DAL.pdb
