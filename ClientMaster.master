@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ClientMaster.master.cs"
+    Inherits="ClientMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="health_style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function clearText(field) {
+            if (field.defaultValue == field.value) field.value = '';
+            else if (field.value == '') field.value = field.defaultValue;
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="health_site_title_bar_wrapper">
+        <div id="health_site_title_bar">
+            <div id="health_menu">
+                <ul>
+                    <li><a href="Home.aspx" class="current"><span></span>Home</a></li>
+                    <li><a href="ReservedBook.aspx" target="_parent"><span></span>IssuedBook</a></li>
+                    <li><a href="#" target="_parent" title="free flash files"><span></span>Flash Files</a></li>
+                    <li><a href="#" target="_parent"><span></span>Gallery</a></li>
+                    <li><a href="#"><span></span>Contact</a></li>
+                </ul>
+            </div>
+            <!-- end of health_menu -->
+            <div class="site_title_left">
+                <div id="site_title">
+                    <h1>
+                        <a href="#">
+                            <!-- <img src="images/health_logo.png" alt="Free Templates" /> -->
+                            Library<span>Management</span> System </a>
+                    </h1>
+                </div>
+            </div>
+            <%--  <div id="search_box">
+                    <input type="text" value="Enter keyword here..." name="q" size="10" id="searchfield"
+                        title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
+                   
+                    <asp:Button id="searchbutton" runat="server"  title="Search" OnClick="searchbutton_Click"/>
+                </div>--%>
+        </div>
+        <!-- end of health_site_title_bar -->
+    </div>
+    <!-- end of health_site_title_bar_wrapper -->
+    <asp:LinkButton ID="LinkLogout" runat="server" OnClick="lbDownloadFile_Click">Logout</asp:LinkButton>
+    <div id="health_content">
+        <div class="section_w900">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div>
+        <div id="health_footer">
+            <!-- end of footer -->
+        </div>
+    </div>
+    </form>
+</body>
+</html>

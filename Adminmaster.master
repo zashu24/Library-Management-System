@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Adminmaster.master.cs"
+    Inherits="Adminmaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="health_style.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript">
+        function clearText(field) {
+            if (field.defaultValue == field.value) field.value = '';
+            else if (field.value == '') field.value = field.defaultValue;
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="health_site_title_bar_wrapper">
+        <div id="health_site_title_bar">
+            <div id="health_menu">
+                <ul>
+                    <li><a href="frmBookMaster.aspx" class="current"><span></span>Book</a></li>
+                    <li><a href="frmLibBranchMaster.aspx" target="_parent" title="free css templates"><span>
+                    </span>Branch</a></li>
+                    <li><a href="frmPublisherMaster.aspx" target="_parent" title="free flash files"><span>
+                    </span>Publisher</a></li>
+                    <li><a href="frmAuthorMaster.aspx" target="_parent"><span></span>Author</a></li>
+                    <li><a href="frmReturnBook.aspx"><span></span>Return</a></li>
+                </ul>
+            </div>
+            <!-- end of health_menu -->
+            <div class="site_title_left">
+                <div id="site_title">
+                    <h1>
+                        <a href="#">
+                            <!-- <img src="images/health_logo.png" alt="Free Templates" /> -->
+                            Library<span>Management</span> System </a>
+                    </h1>
+                </div>
+            </div>
+            <div id="search_box">
+                <input type="text" value="Enter keyword here..." name="q" size="10" id="searchfield"
+                    title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
+                <input type="submit" name="Search" value="" id="searchbutton" title="Search" />
+            </div>
+        </div>
+        <!-- end of health_site_title_bar -->
+    </div>
+    <asp:LinkButton ID="LinkLogout" runat="server" OnClick="lbDownloadFile_Click">Logout</asp:LinkButton>
+    <!-- end of health_site_title_bar_wrapper -->
+    <div id="health_content">
+        <div class="section_w900">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div>
+        <div id="health_footer">
+            <!-- end of footer -->
+        </div>
+    </div>
+    </form>
+</body>
+</html>
