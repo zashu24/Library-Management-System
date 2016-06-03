@@ -7,3 +7,5 @@ SQL Server support for structured and semi-structured data, including digital me
 About the project:
 Library Management Systtem
 The library management system is the system which has very large amount of data. These data gives every information about the library management. For example, the record of books gives the information of publisher, book name, ISBN number, when it was purchased or borrowed and when it was returned. This data is all about which entered in the library therefore, we can save the data in excel or word file. However, when we want to change this data, it is very difficult. The better option we can use is, database system. We can use the database management system for storing the data, change the data as well as update the data.
+
+![library login](https://cloud.githubusercontent.com/assets/17050470/15788476/b4513dac-2995-11e6-8bde-d6125d7cafcd.png)
