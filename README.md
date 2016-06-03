@@ -11,3 +11,12 @@ The library management system is the system which has very large amount of data.
 Following screnshot shows if you login as a Administrator 
 
 ![library login](https://cloud.githubusercontent.com/assets/17050470/15788476/b4513dac-2995-11e6-8bde-d6125d7cafcd.png)
+
+As a Library admin:
+-add book,publisher,auther.
+-check avaibility of book in perticular branch 
+-number of borrows by user 
+-user's avarge fine.
+
+![librarylogin as user](https://cloud.githubusercontent.com/assets/17050470/15788727/e94c9ec4-2996-11e6-8782-5834d5731b00.png)
+
